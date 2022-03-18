@@ -3,4 +3,4 @@ yarn install
 -
 yarn start
 -
-![image](https://user-images.githubusercontent.com/94198465/159078160-7b05da8f-6fbf-4cc6-9166-7015a1f239b1.png)
+![image](https://user-images.githubusercontent.com/94198465/159078405-551097bb-29b0-49bd-a2f5-5feb2ede282d.png)
