@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
+
+.App {
+  box-sizing: border-box;
+  width: 20em;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 0, 255);
+}
+
+.TradeHistory {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(233, 0, 163);
+  color: hsl(288, 100%, 50%);
+  height: 98vh;
+}
+
+.TradeHistory__title {
+  text-align: left;
+  padding: 15px;
+  font-weight: 700;
+  background-color: rgb(89, 0, 255);
+}
+
+.TradeHistory__header {
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+  border-bottom: 1px solid rgb(38, 45, 52);
+  color: rgb(119, 127, 138);
+  font-size: 0.9em;
+}
+
+.TradeHistory__headerSize,
+.TradeHistory__headerPrice,
+.TradeHistory__headerTime {
+  text-align: right;
+  padding: 3px 0px 3px 0;
+}
+
+.TradeHistory__headerSize {
+  flex-basis: 34%;
+}
+
+.TradeHistory__headerPrice {
+  flex-basis: 34%;
+}
+
+.TradeHistory__headerTime {
+  flex-basis: 32%;
+}
+
+.TradeHistory__panel {
+  padding-right: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  font-family: "B612 Mono", monospace;
+  font-size: 0.8em;
+}
+
+.TradeHistory__trade {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.TradeHistory__size,
+.TradeHistory__price,
+.TradeHistory__time {
+  text-align: right;
+}
+
+.TradeHistory__size {
+  flex-basis: 34%;
+  font-weight: 700;
+}
+
+.TradeHistory__size--trailing {
+  opacity: 0.3;
+}
+
+.TradeHistory__price {
+  flex-basis: 34%;
+  font-weight: 700;
+}
+
+.TradeHistory__price--sell {
+  color: red;
+}
+
+.TradeHistory__price--buy {
+  color: green;
+}
+
+.TradeHistory__time {
+  flex-basis: 32%;
+}
+
+.TradeHistory__trade--buy.highlight-appear {
+  background-color: rgb(0, 255, 0, 0.2);
+}
+.TradeHistory__trade--buy.highlight-appear-done {
+  background-color: rgb(7, 15, 21);
+  transition: background-color 100ms linear;
+}
+
+.TradeHistory__trade--sell.highlight-appear {
+  background-color: rgb(255, 0, 0, 0.2);
+}
+.TradeHistory__trade--sell.highlight-appear-done {
+  background-color: rgb(7, 15, 21);
+  transition: background-color 100ms linear;
+}
